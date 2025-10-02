@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Simulador de Cajero Automático</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<p id="iefi">Simulador de Cajero Automático</p>
+
+<div class="contenedor-tablas">
+
+	<div>
+	<table border="1">
+	  <thead>
+	    <tr>
+	      <th>Administracion</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      	<td><button id="crear">Crear cajero</button></td>
+	    </tr>
+	    <tr>
+	      	<td><button id="status">Ver estado cajero</button></td>
+	    </tr>
+	    <tr>
+	      	<td><button id="cargar">Cargar cajero</button></td>
+	    </tr>
+	    <tr>
+	    	<td><button id="start">Encender cajero</button></td>
+	    </tr>
+	    <tr>
+	    	<td><button id="stop">Apagar cajero</button></td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+	<br>
+	
+	<div id="operacion">
+		<table border="1">
+		  <thead>
+		    <tr>
+		      <th>Operacion</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	<tr>
+		      	<td><p id="function"></p></td>
+		    </tr>
+		    <tr>
+		      	<td><button id="saldo">Ver saldo</button></td>
+		    </tr>
+		    <tr>
+		      	<td><input id="valor" type="text" readonly>
+		    </tr>
+		    <tr>
+		    	<td><button id="extraer">Extraer</button></td>
+		    </tr>
+			
+		  </tbody>
+		</table>
+	</div>
+
+	<br>
+	<div>
+		<table border="1">
+	  <thead>
+	    <tr>
+	      <th>Ticket</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+
+	    <tr>
+	      	<td><textarea readonly id="ticket"></textarea>
+	    </tr>
+
+	  </tbody>
+	</table>
+	</div>
+</div>
+<br>
+
+<div id="operacion2">
+	<div id="Pantalla">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Pantalla</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><textarea readonly id="Pantalla"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<table>
+		<tr>
+					<td>
+						<div class="cajero-body">
+							<div class="keypad">
+								<button class="key">1</button>
+								<button class="key">2</button>
+								<button class="key">3</button>
+								<button class="key">4</button>
+								<button class="key">5</button>
+								<button class="key">6</button>
+								<button class="key">7</button>
+								<button class="key">8</button>
+								<button class="key">9</button>
+								<button class="key clear">C</button>
+								<button class="key">0</button>
+								<button class="key delete">&larr;</button>
+							</div>
+						</div>
+					</td>
+		</tr>
+	</table>
+</div>
+
+<script src="view.js"></script>
+<script src="control.js"></script>
+</body>
+</html>

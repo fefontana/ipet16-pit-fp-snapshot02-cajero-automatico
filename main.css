@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+.contenedor-tablas {
+  display: flex;
+  gap: 20px; /* espacio entre las tablas */
+  justify-content: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que bajen si no entran en una línea */
+}
+table {
+  border-collapse: collapse;
+  width: 220px;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+th {
+  background-color: #eaeaea;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+button:hover {
+  background-color: #125a9c;
+  color: white;
+}
+input {
+  width: 90%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#iefi {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#ticket {
+  font-size: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 100px;
+}
+
+/* Nuevos estilos para el teclado */
+.cajero-body {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.key {
+    width: 60px;
+    height: 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: #d0d0d0;
+}
+
+.key.clear {
+    background-color: #ff6347;
+    color: white;
+}
+
+.key.delete {
+    background-color: #4682b4;
+    color: white;
+}
